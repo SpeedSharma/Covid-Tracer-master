@@ -1,0 +1,68 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.app{
+  display: grid;
+  overflow: hidden;
+  background: rgb(39, 13, 82);
+}
+
+
+.app-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  grid-column: 1/-1;
+}
+
+.app-header >h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-family: serif;
+  color: #fff;
+  margin-top: 30px;
+}
+
+span{
+  color: red;
+  font-family: serif;
+}
+
+.cases{
+  color: red;
+}
+.recovered{
+  color: rgb(28, 224, 133);
+}
+.deaths{
+  color: rgb(116, 0, 184);
+}
+
+.app-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+  grid-column: 1/-1;
+}
+
+
+h3{
+  font-size: 3rem;
+}
+
+
+/* Mobile */
+@media(max-width:768px){
+  .app{
+    display: block;
+  }
+
+
+
+  .app-header{
+    flex-direction: column;
+  }
+}
